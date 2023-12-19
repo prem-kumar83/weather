@@ -1,36 +1,41 @@
-.weatherBg{
+/* Original styles */
+
+.weatherBg {
   background: url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg) center/cover no-repeat;
   height: 50vh;
-  display:flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.heading{
+
+.heading {
   color: white;
   font-weight: 700;
 }
-.weatherResultBox{
+
+.weatherResultBox {
   margin: auto;
   margin-top: -3rem;
   width: 500px;
   height: 380px;
   background-color: whitesmoke;
 }
-.icon{
+
+.icon {
   margin-top: 2rem;
   width: 100px;
   height: 100px;
 }
-.weatherCity{
+
+.weatherCity {
   font-size: 35px;
 }
-.weatherTemp{
+
+.weatherTemp {
   font-size: 55px;
   font-weight: 700;
-  
 }
-/* WeatherDetails.css */
 
 .weather-description {
   color: blue;
@@ -46,14 +51,58 @@
   color: red;
   margin: 0px 0;
 }
-.windspeed{
-color: coral;
-margin: 0px 0;
+
+.windspeed {
+  color: coral;
+  margin: 0px 0;
 }
-.visibility{
+
+.visibility {
   color: brown;
   margin: 0px 0;
 }
 
+/* Responsive styles */
 
-/* Add more styles as needed */
+@media (max-width: 768px) {
+  .weatherResultBox {
+    width: 80%;
+    height: auto;
+  }
+
+  .weatherTemp {
+    font-size: 40px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .weatherCity {
+    font-size: 28px;
+  }
+  
+  .weatherBg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .weatherResultBox {
+    width: 90%;
+  }
+
+  .weatherTemp {
+    font-size: 32px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .weatherCity {
+    font-size: 24px;
+  }
+}
