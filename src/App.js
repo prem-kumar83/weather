@@ -22,6 +22,7 @@ function App() {
       .catch((err) => {
         setError("City not found. Please enter a valid city name.");
         console.error("Error fetching weather data:", err);
+        document.getElementsByName("p").innerHTML="err";
       });
   };
 
