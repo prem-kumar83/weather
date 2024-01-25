@@ -28,6 +28,12 @@ function App() {
   {
     getWeatherDetails(inputCity);
   }
+  function showNotFoundMessage() {
+    document.getElementById("notfound").innerHTML = '<p class="not-found">No images found. Please try a different search term.</p>';
+    userInput.style.borderColor = 'red';
+    galleryContainer.style.display='none';
+    showMoreButton.style.display = 'none';
+}
   
 //these are used for test purpose that means if need to display by-default weather of delhi, then used. 
   /* useEffect(() => {
@@ -45,6 +51,7 @@ function App() {
             Search
           </Button>
         </div>
+        <div id="notfound"></div>
       </div>
       
      { Object.keys(data).length>0 && 
